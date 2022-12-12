@@ -1,0 +1,18 @@
+/* Pixels to rem function:
+  ========================================================================== */
+@function rem($pixels, $context: $mainFontSize) {
+  @return calc($pixels / $context) * 1rem;
+}
+
+/* Adaptive:
+  ========================================================================== */
+@mixin tables {
+  @media screen and (max-width: $tableWidth) {
+    @content;
+  }
+}
+@mixin phones {
+  @media screen and (max-width: $phonesWidth) {
+    @content;
+  }
+}

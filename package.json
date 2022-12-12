@@ -1,7 +1,7 @@
 {
   "name": "alearn",
   "version": "1.0.0",
-  "description": "",
+  "description": "Student project (educational platform)",
   "main": "index.js",
   "scripts": {
     "deploy": "cross-env NODE_ENV=prod gulp prod && gh-pages -d dist",
