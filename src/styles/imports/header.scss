@@ -1,3 +1,133 @@
 .header {
-  display: none;
+  padding-top: rem(84px);
+  margin-bottom: rem(62px);
+
+  &__up-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(60px);
+  }
+
+  &__hamburger {
+    display: flex;
+    cursor: pointer;
+
+    &-icon {
+      stroke: black;
+    }
+  }
+
+  &__logo {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(50px);
+    line-height: rem(61px);
+    color: #000000;
+    letter-spacing: 0.2em;
+  }
+
+  &__user {
+    display: flex;
+    width: rem(65px);
+    height: rem(65px);
+    cursor: pointer;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__search {
+    &-form {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: rem(29px);
+    }
+
+    &-wrap {
+      display: flex;
+      align-items: center;
+      position: relative;
+      max-width: rem(730px);
+      width: 100%;
+
+      &:before {
+        content: " ";
+        position: absolute;
+        display: flex;
+        width: rem(0.3px);
+        height: 100%;
+        background: black;
+        left: rem(38px);
+      }
+    }
+
+    &-submit {
+      display: flex;
+      border: none;
+      outline: none;
+      width: rem(26px);
+      height: rem(26px);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0.5rem;
+      background: none;
+    }
+
+    &-input {
+      width: 100%;
+      outline: none;
+      border: none;
+      padding: rem(11px) rem(11px) rem(11px) rem(63px);
+      background: #D5D3D3;
+      border-radius: rem(10px);
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: rem(13px);
+      line-height: rem(16px);
+      letter-spacing: 0.2em;
+      color: #000000;
+    }
+  }
+}
+
+.nav {
+  width: 100%;
+
+  &__list {
+    display: flex;
+    height: rem(56px);
+  }
+
+  &__item {
+    flex: 1 1 rem(185px);
+    background: #F96D46;
+    display: flex;
+
+    &:not(:last-child) {
+      border-right: rem(1px) solid black;
+    }
+
+    &-link {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: rem(13px);
+      line-height: rem(16px);
+      letter-spacing: 0.2em;
+      color: #FFFFFF;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
