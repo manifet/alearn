@@ -1,9 +1,9 @@
 /* Utils:
   ========================================================================== */
+@import './utils/fonts';
 @import './utils/libs';
-@import './utils/vars';
 @import './utils/mixins';
-
+@import './utils/vars';
 
 /* Main styles:
   ========================================================================== */
@@ -84,6 +84,26 @@ section {
   flex-direction: column;
 }
 
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  white-space: nowrap;
+  color: #FFFFFF;
+  background: linear-gradient(90.72deg, #343E73 0.09%, #EA743D 53.22%, #EC2F1D 100.09%);
+  border-radius: rem(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+}
+
 /* Imports:
   ========================================================================== */
 @import 'imports/header';
+
+/* Sections:
+  ========================================================================== */
+@import 'sections/welcome';

@@ -1,1 +1,31 @@
-header Это хедер
+header(class="header")
+    div(class="header__container container")
+        div(class="header__up-row")
+            div(class="header__hamburger")
+                svg(class="header__hamburger-icon" width="44" height="25" viewBox="0 0 44 25")
+                    use(xlink:href="./images/sprites.svg#hamburger")
+            span(class="header__logo") ALearn
+            div(class="header__user")
+                //В xml только image тег, поэтому в спрайты его нельзя добавить. Нужно исправить в макете
+                img(class="header__user-img" src="./images/icons/user.svg" alt="User icon")
+        // Хз, как это будет реализовано с БД, мб нужно сверстать по-другому
+        form(class="header__search-form" action="" method="")
+            div(class="header__search-wrap")
+                button(class="header__search-submit" type="submit")
+                    //В xml только image тег, поэтому в спрайты его нельзя добавить. Нужно исправить в макете
+                    img(class="header__search-icon" src="./images/icons/search.svg" alt="Search icon")
+                input(class="header__search-input" type="search" placeholder="Поиск")
+        nav(class="nav")
+            ul(class="nav__list")
+                li(class="nav__item")
+                    a(class="nav__item-link" href="") Все курсы
+                li(class="nav__item")
+                    a(class="nav__item-link" href="") Рисование
+                li(class="nav__item")
+                    a(class="nav__item-link" href="") Вязание
+                li(class="nav__item")
+                    a(class="nav__item-link" href="") Лепка
+                li(class="nav__item")
+                    a(class="nav__item-link" href="") Работа с бумагой
+                li(class="nav__item")
+                    a(class="nav__item-link" href="") Для авторов
