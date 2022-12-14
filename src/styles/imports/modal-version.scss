@@ -1,0 +1,51 @@
+.modal-version {
+  background: linear-gradient(180deg, rgba(236, 51, 31, 0.9) 0%, rgba(235, 90, 49, 0.9) 100%);
+  border-radius: 15px;
+  padding: rem(48px) rem(36px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 10%;
+  bottom: 0;
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(20px);
+    line-height: rem(24px);
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    margin-bottom: rem(35px);
+  }
+  &__switch{
+    background: #FFFFFF;
+    border-radius: rem(15px);
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(20px);
+    line-height: rem(24px);
+    letter-spacing: 0.2em;
+    color: #F42C27;
+    padding: rem(22px) 0;
+    min-width: rem(302px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__close{
+    margin-top: rem(20px);
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(15px);
+    line-height: rem(18px);
+    letter-spacing: 0.2em;
+    text-decoration-line: underline;
+    white-space: nowrap;
+    color: #383C78;
+  }
+}
