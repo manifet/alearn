@@ -1,9 +1,34 @@
 header(class="header")
     div(class="header__container container")
         div(class="header__up-row")
-            div(class="header__hamburger")
-                svg(class="header__hamburger-icon" width="44" height="25" viewBox="0 0 44 25")
-                    use(xlink:href="./images/sprites.svg#hamburger")
+            div(class="header__menu-wrap")
+                div(class="header__hamburger")
+                    svg(class="header__hamburger-icon" width="44" height="25" viewBox="0 0 44 25")
+                        use(xlink:href="./images/sprites.svg#hamburger")
+                //Пока что без js, display:none;
+                div(class="header__menu")
+                    ul(class="header__menu-list")
+                        li(class="header__menu-item")
+                            span(class="header__menu-title") Рисование
+                            ul(class="header__menu-sublist")
+                                li(class="header__menu-subitem")
+                                    a(class="header__menu-link" href="./") Рисование акварелью
+                                li(class="header__menu-subitem")
+                                    a(class="header__menu-link" href="./") Рисование карандашами
+                                li(class="header__menu-subitem")
+                                    a(class="header__menu-link" href="./") Рисование маслом
+                                li(class="header__menu-subitem")
+                                    a(class="header__menu-link" href="./") Рисование пастелью
+                        li(class="header__menu-item")
+                            span(class="header__menu-title") Вязание
+                        li(class="header__menu-item")
+                            span(class="header__menu-title") Лепка
+                        li(class="header__menu-item")
+                            span(class="header__menu-title") Работа с бумагой
+                        li(class="header__menu-item")
+                            span(class="header__menu-title") Фелтинг
+                        li(class="header__menu-item")
+                            span(class="header__menu-title") Вышивка
             span(class="header__logo") ALearn
             div(class="header__user")
                 //В xml только image тег, поэтому в спрайты его нельзя добавить. Нужно исправить в макете
