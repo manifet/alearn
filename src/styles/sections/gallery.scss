@@ -1,0 +1,95 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.last_block_container {
+    max-width: 1252px;
+    max-height: 80%;
+    
+}
+.last_block_container h3 {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: XX-large;
+    letter-spacing: 10px;
+    margin-left: 2.2em;
+}
+.footer img {
+    margin: 0 15px;
+}
+.gallery_galary {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn_swipe {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 0 15px;
+    background-repeat: no-repeat;
+}
+.left_swipe {
+    background-image: url(./images/photos/left.png);
+    background-position: 5px 6.5px;
+    background-color: #383C78;
+}
+.right_swipe {
+    background-image: url(./images/photos/right.png);
+    background-position: 6px 6.5px;
+    background-color: #F42C27;
+}
+.gallery_points {
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    align-items: center;
+}
+.gallery_points a {
+    width:15px ;
+    height: 15px;
+    border-radius: 100%;
+}
+.gallery_point_1 {
+    background-color:#383C78 ;
+}
+.gallery_point_2 {
+    background-color:#795065 ;
+}
+.gallery_point_3 {
+    background-color:#A35856 ;
+}
+.gallery_point_4 {
+    background-color:#F57040 ;
+}
+.gallery_point_5 {
+    background-color:#F24C39 ;
+}
+.gallery_point_6 {
+    background-color:#F42C27 ;
+}
+.container_for_last_gallery_btn {
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+.container_for_last_gallery_btn a button{
+    background: linear-gradient(90.72deg,#343e73 .09%,#ea743d 53.22%,#ec2f1d 100.09%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    width: 255px;
+    height: 36px;
+    font-family: 'Montserrat',sans-serif;
+}
