@@ -1,0 +1,43 @@
+footer {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #1F1F1F;
+}
+.footer_container {
+    width: 1252px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em 6.3em;
+}
+.last_wish {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
+    letter-spacing: 4px;
+    color:#f5e8e8;
+}
+.last_help_menu {
+    list-style: none;
+}
+.last_help_menu li {
+    margin: 5px 0;
+    text-align: end;
+}
+.last_help_menu li a {
+    text-decoration: none;
+}
+.last_help_menu_item1 a{
+    color:#f5e8e8;
+}
+.last_help_menu_item2 a{
+    color: #b8b3b3;
+}
+.last_help_menu_item3 a{
+    color: #b8b3b3;
+}
