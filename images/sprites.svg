@@ -4,4 +4,10 @@
         <line y1="12.5" x2="44" y2="12.5"/>
         <line y1="24.5" x2="44" y2="24.5"/>
     </symbol>
+    <symbol id="arrow-left">
+        <path d="M21 8H1M1 8L8.5 1M1 8L8.5 15"/>
+    </symbol>
+    <symbol id="arrow-right">
+        <path d="M0 8L20 8M20 8L12.5 15M20 8L12.5 1"/>
+    </symbol>
 </svg>
