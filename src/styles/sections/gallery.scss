@@ -1,95 +1,142 @@
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.last_block_container {
-    max-width: 1252px;
-    max-height: 80%;
-    
-}
-.last_block_container h3 {
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 500;
+.gallery {
+  &__container {
+    padding: rem(110px) 0;
+    align-items: flex-end;
+  }
+
+  &__heading {
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-size: XX-large;
-    letter-spacing: 10px;
-    margin-left: 2.2em;
-}
-.footer img {
-    margin: 0 15px;
-}
-.gallery_galary {
-    margin-top: 3em;
+    font-weight: 400;
+    font-size: rem(50px);
+    line-height: rem(61px);
+    letter-spacing: 0.2em;
+    color: #000000;
+    margin-bottom: rem(70px);
+    width: 100%;
+    text-align: left;
+  }
+
+  &__slider {
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &-wrap {
+      width: 100%;
+      position: relative;
+      height: rem(291px);
+      overflow: hidden;
+    }
+  }
+
+  &__arrow {
+    stroke: black;
+    fill: none;
+
+    &-wrap {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      border-radius: 100%;
+      width: rem(40px);
+      height: rem(40px);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--left {
+      left: rem(-30px);
+      background: #383C78;
+      transform: translateX(-50%);
+    }
+
+    &--right {
+      background: #F42C27;
+      right: rem(-30px);
+      transform: translateX(50%);
+    }
+  }
+
+  &__list {
+    display: flex;
+    position: absolute;
+    height: 100%;
+  }
+
+  &__item {
+    width: rem(255px);
+    height: 100%;
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: rem(30px);
+    }
+
+    &-link {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    margin-top: rem(82px);
     justify-content: center;
-    align-items: center;
-}
+    width: 100%;
+    &-item {
+      width: rem(15px);
+      height: rem(15px);
+      border-radius: 100%;
+      cursor: pointer;
 
+      &:nth-child(1) {
+        background: #383C78;
+      }
 
-.btn_swipe {
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    border: none;
-    margin: 0 15px;
-    background-repeat: no-repeat;
-}
-.left_swipe {
-    background-image: url(./images/photos/left.png);
-    background-position: 5px 6.5px;
-    background-color: #383C78;
-}
-.right_swipe {
-    background-image: url(./images/photos/right.png);
-    background-position: 6px 6.5px;
-    background-color: #F42C27;
-}
-.gallery_points {
-    margin: 0 auto;
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 400px;
-    align-items: center;
-}
-.gallery_points a {
-    width:15px ;
-    height: 15px;
-    border-radius: 100%;
-}
-.gallery_point_1 {
-    background-color:#383C78 ;
-}
-.gallery_point_2 {
-    background-color:#795065 ;
-}
-.gallery_point_3 {
-    background-color:#A35856 ;
-}
-.gallery_point_4 {
-    background-color:#F57040 ;
-}
-.gallery_point_5 {
-    background-color:#F24C39 ;
-}
-.gallery_point_6 {
-    background-color:#F42C27 ;
-}
-.container_for_last_gallery_btn {
-    display: flex;
-    justify-content: end;
-    margin-top: 50px;
-    margin-right: 100px;
-}
-.container_for_last_gallery_btn a button{
-    background: linear-gradient(90.72deg,#343e73 .09%,#ea743d 53.22%,#ec2f1d 100.09%);
-    padding: 5px 20px;
-    border-radius: 20px;
-    border: none;
-    color: white;
-    width: 255px;
-    height: 36px;
-    font-family: 'Montserrat',sans-serif;
+      &:nth-child(2) {
+        background: #795065;
+      }
+
+      &:nth-child(3) {
+        background: #A35856;
+      }
+
+      &:nth-child(4) {
+        background: #F57040;
+      }
+
+      &:nth-child(5) {
+        background: #F24C39;
+      }
+
+      &:nth-child(6) {
+        background: #F42C27;
+      }
+
+      &:not(:last-child) {
+        margin-right: rem(80px);
+      }
+    }
+  }
+
+  &__button {
+    width: rem(255px);
+    padding: rem(12px) 0;
+    margin-top: rem(85px);
+    font-size: rem(10px);
+    line-height: rem(12px);
+  }
 }
