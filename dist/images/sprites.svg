@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg">
-    <symbol id="hamburger">
-        <line y1="0.5" x2="44" y2="0.5"/>
-        <line y1="12.5" x2="44" y2="12.5"/>
-        <line y1="24.5" x2="44" y2="24.5"/>
-    </symbol>
-</svg>
