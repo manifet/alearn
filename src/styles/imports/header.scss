@@ -63,7 +63,16 @@
 
 
     &-sublist {
-      margin-top: rem(22px);
+      visibility: hidden;
+      height: 0;
+      opacity: 0;
+      .header__menu-item.active &{
+        margin-top: rem(22px);
+        visibility: visible;
+        height: auto;
+        opacity: 1;
+        transition: 0.5s;
+      }
     }
 
     &-subitem {
