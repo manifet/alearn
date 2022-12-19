@@ -29,7 +29,12 @@
     width: rem(595px);
     z-index: 99;
     background: linear-gradient(180deg, #EA362A 0%, #EAA07E 100%);
-    display: none; // Пока что без js
+    transition: 0.5s;
+    transform: translateX(-100%);
+
+    &.active {
+      transform: translateX(0);
+    }
 
     &-wrap {
       display: flex;

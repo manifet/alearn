@@ -2,13 +2,17 @@
   background: linear-gradient(180deg, rgba(236, 51, 31, 0.9) 0%, rgba(235, 90, 49, 0.9) 100%);
   border-radius: 15px;
   padding: rem(48px) rem(36px);
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: fixed;
   right: 10%;
   bottom: 0;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
 
   &__title {
     font-family: 'Montserrat', sans-serif;
@@ -20,10 +24,11 @@
     color: #FFFFFF;
     margin-bottom: rem(35px);
   }
-  &__switch{
+
+  &__switch {
     background: #FFFFFF;
     border-radius: rem(15px);
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: rem(20px);
@@ -36,9 +41,10 @@
     align-items: center;
     justify-content: center;
   }
-  &__close{
+
+  &__close {
     margin-top: rem(20px);
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: rem(15px);
@@ -47,5 +53,6 @@
     text-decoration-line: underline;
     white-space: nowrap;
     color: #383C78;
+    cursor: pointer;
   }
 }
