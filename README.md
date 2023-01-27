@@ -1,7 +1,7 @@
 # Alearn
 
 Alearn is a student project that creates a self-study platform website using HTML (Pug), CSS (Sass) and JavaScript technologies.
-### Preview
+## Preview
 You can see the finished project [here](https://manifet.github.io/alearn/) <br/>
 ![Screenshot of website](https://user-images.githubusercontent.com/61707913/215111356-925364ea-8167-436f-9e20-36737a16180d.png)
 
@@ -9,18 +9,18 @@ You can see the finished project [here](https://manifet.github.io/alearn/) <br/>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Installing
+### Installing
 
 A step by step series of examples that tell you how to get a development env running (assumes node.js and npm already installed).
 
-### Сlone repository from github
+#### Сlone repository from github
 
 ```
 git clone https://github.com/manifet/alearn.git
 cd alearn
 ```
 
-### Install dependencies
+#### Install dependencies
 
 ```
 npm install
@@ -33,7 +33,7 @@ npm run dev
 npm run build
 ```
 
-## Deployment
+### Deployment
 
 Deploy to Github Pages. Uses the npm plugin `gh-pages`
 
@@ -41,4 +41,4 @@ Deploy to Github Pages. Uses the npm plugin `gh-pages`
 npm run deploy
 ```
 
-You can ask me a question [here](https://github.com/manifet/alearn/issues)
+## You can ask me a question [here](https://github.com/manifet/alearn/issues)
