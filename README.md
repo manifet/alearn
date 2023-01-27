@@ -16,7 +16,7 @@ A step by step series of examples that tell you how to get a development env run
 ### Сlone repository from github
 
 ```
-git clone https://github.com/manifet/mr-burger.git
+git clone https://github.com/manifet/alearn.git
 cd alearn
 ```
 
