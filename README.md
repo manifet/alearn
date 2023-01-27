@@ -1,74 +1,44 @@
-## Запустить проект
+# Alearn
 
-### Сборка для разработки (без post-css, sourcemaps, минификации и т.д.).
+Alearn is a student project that creates a self-study platform website using HTML (Pug), CSS (Sass) and JavaScript technologies.
+### Preview
+You can see the finished project [here](https://manifet.github.io/alearn/) <br/>
+![Screenshot of website](https://user-images.githubusercontent.com/61707913/215111356-925364ea-8167-436f-9e20-36737a16180d.png)
 
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running (assumes node.js and npm already installed).
+
+### Сlone repository from github
+
+```
+git clone https://github.com/manifet/mr-burger.git
+cd alearn
+```
+
+### Install dependencies
+
+```
+npm install
+```
+### Start the development process or make the final build 
 ```
 npm run dev
 ```
-
-### Cборка для прода (обратное разработке только без поднятия лок сервера).
-
 ```
 npm run build
 ```
 
-### Сборка в прод и деплой на хостинг ([manifet.github.io/alearn](https://manifet.github.io/alearn)).
+## Deployment
+
+Deploy to Github Pages. Uses the npm plugin `gh-pages`
 
 ```
 npm run deploy
 ```
 
-## Структура проекта.
-
-### Шрифты.
-
-Просто копируются в `/dist` и все буквы в названии переводятся в lower case. Вроде в макетах только встроенные шрифты, но
-пусть будет.
-
-```
-src/fonts
-```
-
-### Картинки.
-
-Просто копируются в `/dist`.
-
-```
-src/images
-```
-
-### Разметка.
-
-Компилируются в dist. Основные страницы в корне, блоки кода в `/imports`.
-
-```
-src/pages
-```
-
-### Cтили.
-
-Компилируются в `/dist`.
-
-```
-src/styles
-```
-
-Основной файл, куда все подключается и где глобальные стили. В самом низу подключаются файлы из `src/styles/imports`.
-
-```
-src/styles/main.scss 
-```
-
-Директория с полезными фичами. Глобальные переменные, библиотеки, шрифты, полезные функции [^1] и т.д., все сюда.
-[^1]: В mixins.scss помимо миксинов адаптива есть функция для перевода из пикселей в rem, пример использования - `rem(16px)`
-
-```
-src/styles/utils
-```
-### Скрипты.
-
-Собираются все файлы js вместе и компилируются в `/dist`. 
-
-```
-src/scripts
-```
+You can ask me a question [here](https://github.com/manifet/alearn/issues)
